@@ -1,2 +1,3 @@
 # project_1
-repository for first project 
+
+repository for first project
