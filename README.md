@@ -1,4 +1,3 @@
-
 # Remote Education Resource
 
 ## _A single-page website for parents facing the challenges of remote education_
@@ -17,8 +16,8 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 ---
 
 ## Project Collaborators
-<br>
 
+<br>
 
 [![](https://github.com/dmaysteinman.png?size=64)](https://github.com/dmaysteinman)[![linkedin](Images/linkedin.svg)](http://www.linkedin.com/in/danielle-may-steinman-2868781b4)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,13 +26,13 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 [![](https://github.com/JGilb28-7.png?size=64)](https://github.com/JGilb28-7)[![linkedin](Images/linkedin.svg)](http://www.linkedin.com/in/jonathan-gilbert-67600211)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![](https://github.com/joeldore.png?size=64)](https://github.com/joeldore)
-[![linkedin](Images/linkedin.svg?)](http://www.linkedin.com/in/joeldore)
+[![linkedin](Images/linkedin.svg)](http://www.linkedin.com/in/joeldore)
 
 ---
 
 ## Reflection
 
-- Searching for APIs to fit  specific design was a small obstacle at first. For future projects, we will identify potentially useful APIs **early** and let available resources have a larger influence on the planning/development process.
+- Searching for APIs to fit specific design was a small obstacle at first. For future projects, we will identify potentially useful APIs **early** and let available resources have a larger influence on the planning/development process.
 
 ---
 

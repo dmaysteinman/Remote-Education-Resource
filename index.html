@@ -1,43 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Helping Communities Transition to Online Learning</title>
+    <!-- MDB icon -->
+    <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
+   <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <!-- navbar -->
-        <!-- Document Name -->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Lets Get Learning </a>
+
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
         <!-- Links -->
-                <!-- Calendar?
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Online-Resources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Dropdown</a
+            >
+            <div
+              class="dropdown-menu dropdown-primary"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">Calendar</a>
+              <a class="dropdown-item" href="#">Calculator</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+      </div>
+    </nav>
+    <br>
+    <br>
+
+    <!-- Card -->
+    <!-- add padding, and resize image -->
+<div class="card card-cascade wider reverse">
+
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="./assets/download.jpeg"
+      alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+
+    <!-- Title -->
+    <h4 class="card-title"><strong>Helping Parents & Students Strive in an Online Environment</strong></h4>
+    <!-- Subtitle -->
+    <h6 class="font-weight-bold indigo-text py-2">Our Statement</h6>
+    <!-- Text -->
+    <p class="card-text">As you may know we are entering a new world of living. Current circumstances have forced our civilization to become more precautious of our environment. Our communities are  strong, resilient and most important adaptable. As our children are now  forced to learn in an online environment parents and teachers want to be able to offer all the tools they will need to succeed. 
+    </p>
+
+    <!-- Linkedin -->
+    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Twitter -->
+    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+    <!-- Dribbble -->
+    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+
+  </div>
+
+</div>
+<br>
+<br>
+<div class="col-4">
+  <div class="card card-cascade narrower">
+    <div class="view view-cascade overlay">
+      <!-- Card image -->
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+        alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+   <!-- Card content -->
+  
+    <div class="card-body card-body-cascade">
+        <!-- Label -->
+     <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+     <!-- Title -->
+     <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+     <!-- Text -->
+     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+      laboriosam, nisi ut aliquid ex ea commodi.</p>
+      <!-- Button -->
+     <a class="btn btn-unique">Button</a>
+    </div>
+  </div>
+</div>
+<div class="col-4">
+  <div class="card card-cascade narrower">
+    <div class="view view-cascade overlay">
+      <!-- Card image -->
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+        alt="Card image cap">
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+   <!-- Card content -->
+  
+    <div class="card-body card-body-cascade">
+        <!-- Label -->
+     <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+     <!-- Title -->
+     <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+     <!-- Text -->
+     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+      laboriosam, nisi ut aliquid ex ea commodi.</p>
+      <!-- Button -->
+     <a class="btn btn-unique">Button</a>
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+</div>
+
+</div>
+<!-- Card -->
+    
+          <!-- Dropdown Trigger -->
+          <!-- Document Name -->
+          <!-- Links -->
+          <!-- Calendar?
                 Calculator?
+            <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Dropdown<i class="material-icons right"></i
+            ></a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <header>
+      
+    </header>
 
+    <!-- Header  -->
+    <!-- Title -->
 
-    Header -->
-        <!-- Title -->
-        
-       
     <!--<title> how this works card</title> -->
     <!-- <p>Description</p> -->
     <!-- search card -->
     <!-- Form -->
     <!-- Student information input-->
-                <!-- age -->
-                <!-- grade -->
-                <!-- subject -->
-                <!-- focus -->
+    <!-- age -->
+    <!-- grade -->
+    <!-- subject -->
+    <!-- focus -->
     <!--</form>  -->
-    
+
     <!-- Modal Content -->
     <!--  -->
     <!--  -->
     <!--  -->
-                
-<!--MVP minimum viable product === minimum code needed to prove a product -->
-<!-- minimally functional -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="logic.js"></script>
 
-</body>
+
+    <!--MVP minimum viable product === minimum code needed to prove a product -->
+    <!-- minimally functional -->
+
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<script type="text/javascript" src="logic.js"></script>
+  </body>
 </html>
