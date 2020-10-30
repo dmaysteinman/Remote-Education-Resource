@@ -9,7 +9,7 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 ## Features
 
-- Search for educational resources using (** mention specific APIs **).
+- Search for educational resources using Education Data Portal and YouTube Data APIs.
 
 - User selects criteria such as student age/grade, subject matter, etc. to get results for their specific needs.
 
