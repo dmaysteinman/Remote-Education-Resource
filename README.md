@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-
-# project_1
-
-# repository for first project
-
 # Remote Education Resource
 
 ## _A single-page website for parents facing the challenges of remote education_
@@ -32,7 +26,7 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 [![](https://github.com/JGilb28-7.png?size=64)](https://github.com/JGilb28-7)[![linkedin](Images/linkedin.svg)](http://www.linkedin.com/in/jonathan-gilbert-67600211)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![](https://github.com/joeldore.png?size=64)](https://github.com/joeldore)
-[![linkedin](Images/linkedin.svg?)](http://www.linkedin.com/in/joeldore)
+[![linkedin](Images/linkedin.svg)](http://www.linkedin.com/in/joeldore)
 
 ---
 
@@ -60,4 +54,3 @@ This project is [MIT](https://github.com/JoelDore/REPO-NAME/blob/main/LICENSE) l
 © 2020 _StopBooleanMe_
 
 </div>
->>>>>>> c0400d4ed2ba483b8b9519227a9b4620f2e5428c
