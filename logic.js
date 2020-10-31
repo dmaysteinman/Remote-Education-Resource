@@ -1,10 +1,12 @@
-// APIS go in here
-// googleclassroom
-// openED
-// blackboard
+function getData() {
+
+const stateSelect = $("#state-select option:selected").text();
+console.log(stateSelect)
 
 var queryURL =
-  "https://educationdata.urban.org/api/v1/schools/ccd/directory/2018/";
+  "https://educationdata.urban.org/api/v1/schools/ccd/directory/2018/?state_location=" + stateSelect
+
+
 
 $.ajax({
   url: queryURL,
@@ -13,12 +15,13 @@ $.ajax({
     console.log(response.results);
 
     let results=response.results;
+  
     
-    for (let i = 0; i<=results.length; i++) {
-      let schoolName = results[i].school_name;
+    for (const i = 0; i<=results.length; i++) {
+      const schoolName = results[i].school_name;
       console.log(schoolName);
 
-      let virtual = results[i].virtual;
+      const virtual = results[i].virtual;
         if (virtual === 0) {
         console.log("no");
       } else if (virtual === 1) {
@@ -27,16 +30,28 @@ $.ajax({
         console.log("not sure")
       }
 
-      let state = response.results[i].state_location;
-        if (state === "AL") {
-          console.log("Alabama")
+      const state = response.results[i].state_location;
+        if (state === "VA") {
+          console.log("Virginia")
+        } else if (state === "NH") {
+          console.log("New Hampshire")
+        } else if (state === "ME") {
+            console.log("Maine")
         } else {
-          console.log("Not Alabama")
+          console.log("Other")
         }
+
+        // The zip code for loop etc
+      // const zip = response.results[i].zip_location;
+      //   if (zip === "") {
+      //     console.log(schoolName)
+      //   }
+      
           
           
-        }
+      }
 
 
   
 });
+}
