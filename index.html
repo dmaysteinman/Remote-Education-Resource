@@ -55,16 +55,19 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="./index.html"
               >Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="./features.html">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Online-Resources</a>
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resources.html">Online-Resources</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -97,6 +100,7 @@
         </form>
       </div>
     </nav>
+    <br />
     <br />
     <br />
 
@@ -186,11 +190,17 @@
         <div class="view view-cascade overlay">
           <div class="container">
             <h1>Data Search</h1>
-            <select id="state-select" class="mdb-select md-form" multiple>
+            <select id="state-select" class="mdb-select md-form">
               <option value="" disabled selected>Select your state</option>
               <option value="1">VA</option>
+              <option value="2">NH</option>
+              <option value="3">ME</option>
+              <option value="4">VT</option>
+              <option value="5">NY</option>
+              <option value="6">CT</option>
             </select>
             <input id="searchBtn-state" type="button" onclick="getData()" />
+            <input id="searchBtn-zip" type="text" />
             <div id="data-results"></div>
           </div>
         </div>
