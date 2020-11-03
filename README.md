@@ -40,7 +40,7 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 - Integrate calendar feature for user to access assignments/due dates
 
-- Expand to accommodate higher levels of schooling
+- Option for user to narrow results by school level/grades offered
 
 ---
 
