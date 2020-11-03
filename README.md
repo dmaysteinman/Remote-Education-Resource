@@ -1,6 +1,6 @@
 # Remote Education Resource
 
-## _A single-page website for parents facing the challenges of remote education_
+### _A single-page website for parents facing the challenges of remote education_
 
 ![Demo](https://www.placecage.com/600/300)  
 Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
