@@ -24,7 +24,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#">Lets Get Learning </a>
 
@@ -52,7 +52,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./resources.html">Online-Resources</a>
                 </li>
-                <li class="nav-item dropdown">
+
+                <!-- Dropdown with features? -->
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -60,25 +62,19 @@
                         <a class="dropdown-item" href="#">Calculator</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                </li>
+                </li> -->
+
             </ul>
-            <form class="form-inline">
-                <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-                </div>
-            </form>
-        </div>
     </nav>
-    <br />
-    <br />
-    <br />
 
     <!-- Card -->
     <!-- add padding, and resize image -->
     <div class="card card-cascade wider reverse">
         <!-- Card image -->
         <div class="view view-cascade overlay">
-            <img class="card-img-top" src="./assets/download.jpeg" alt="Card image cap" />
+            <img class="card-img-top"
+                src="https://www.vedamo.com/wp-content/uploads/2018/07/Setting-up-online-school.png"
+                alt="Card image cap" />
             <a href="#!">
                 <div class="mask rgba-white-slight"></div>
             </a>
@@ -101,87 +97,52 @@
                 online environment parents and teachers want to be able to offer all
                 the tools they will need to succeed.
             </p>
-
-            Linkedin
-            <!-- <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a> -->
-            <!-- Twitter -->
-            <!-- <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a> -->
-            <!-- Dribbble -->
-            <!-- <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a> -->
         </div>
     </div>
-    <br />
-    <br />
-    <div class="col-6">
-        <div class="card card-cascade narrower">
-            <div class="view view-cascade overlay">
-                <div class="container">
-                    <h1>Resource Search</h1>
 
-                    <form id="youtube-form">
-                        <label for="resourceInput">Search for a resource</label>
-                        <input type="text" placeholder="Search for a topic" id="search-term" />
-                        <select id="channelSelect" class="mdb-select md-form">
-                            <option value="" disabled selected>Select a YouTube channel</option>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h1>Resource Search</h1>
+
+                        <form id="youtube-form">
+                            <select id="channelSelect" class="mdb-select md-form">
+                                <option value="" disabled selected>Select YouTube channel</option>
+                            </select>
+                            <input type="text" placeholder="Search for a topic" id="search-term" />
+                            <br>
+                            <button id="search-button" type="button" class="btn btn-custom text-white"
+                                onclick="getVideo()">Search</button>
+                        </form>
+                        <div>
+                            <iframe src=""></iframe>
+                            <h3></h3>
+                            <p class="description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Data Search</h1>
+                        <select id="state-select" class="mdb-select md-form">
+                            <option value="" disabled selected>Select your state</option>
                         </select>
-                        <button id="search-button" type="button" onclick="getVideo()">Search</button>
-                    </form>
+                        <input id="searchBtn-zip" type="text" placeholder="Enter ZIP code" />
+                        <button id="searchBtn-state" class="btn btn-custom text-white" type="button"
+                            onclick="getData()">Search</button>
+                        <div id="data-results"></div>
+                    </div>
 
-                    <iframe src=""></iframe>
-                    <h3>Video Title</h3>
-                    <p class="description">Video Description</p>
-                    <p></p>
                 </div>
-            </div>
-            <!-- Card content -->
-
-            <div class="card-body card-body-cascade">
-                <!-- Label -->
-                <h5 class="pink-text pb-2 pt-1">
-                    <i class="fas fa-utensils"></i> Culinary
-                </h5>
-                <!-- Title -->
-                <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
-                <!-- Text -->
-                <p class="card-text">
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                    suscipit laboriosam, nisi ut aliquid ex ea commodi.
-                </p>
-                <!-- Button -->
             </div>
         </div>
     </div>
-    <div class="col-6">
-        <div class="card card-cascade narrower">
-            <div class="view view-cascade overlay">
-                <div class="container">
-                    <h1>Data Search</h1>
-                    <select id="state-select" class="mdb-select md-form">
-                        <option value="" disabled selected>Select your state</option>
-                    </select>
-                    <input id="searchBtn-state" type="button" onclick="getData()" />
-                    <input id="searchBtn-zip" type="text" />
-                    <div id="data-results"></div>
-                </div>
-            </div>
-            <!-- Card content -->
 
-            <div class="card-body card-body-cascade">
-                <!-- Label -->
-                <h5 class="pink-text pb-2 pt-1">
-                    <i class="fas fa-utensils"></i> Culinary
-                </h5>
-                <!-- Title -->
-                <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
-                <!-- Text -->
-                <p class="card-text">
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                    suscipit laboriosam, nisi ut aliquid ex ea commodi.
-                </p>
-                <!-- Button -->
-            </div>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
     <script src="./logic.js"></script>
