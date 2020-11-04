@@ -1,4 +1,3 @@
-/* alternative to bootstrap */
-
-/* material bootstrap (closest to bootstrap)
-materialize --- library with prebuilt classes etc */
+#navbar, .btn-custom {
+    background-color: rgb(16, 97, 115);
+}
