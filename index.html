@@ -84,18 +84,17 @@
         <div class="card-body card-body-cascade text-center">
             <!-- Title -->
             <h4 class="card-title">
-                <strong>Helping Parents & Students Strive in an Online Environment</strong>
+                <strong>Helping Parents & Students Thrive in an Online Environment</strong>
             </h4>
             <!-- Subtitle -->
-            <h6 class="font-weight-bold indigo-text py-2">Our Statement</h6>
+            <h6 class="font-weight-bold indigo-text py-2">Our Purpose</h6>
             <!-- Text -->
             <p class="card-text">
-                As you may know we are entering a new world of living. Current
-                circumstances have forced our civilization to become more precautious
-                of our environment. Our communities are strong, resilient and most
-                important adaptable. As our children are now forced to learn in an
-                online environment parents and teachers want to be able to offer all
-                the tools they will need to succeed.
+                Struggling to adjust to online schooling? You're not alone. 
+                <br>
+                We've hand picked a few YouTube channels that focus on education. Just type in the subject and pick a channel to find relevant videos.
+                <br>
+                Looking to contact schools in your area? Just type in your state initials and zip code for the most up-to-date list. 
             </p>
         </div>
     </div>
@@ -112,6 +111,7 @@
                             <select id="channelSelect" class="mdb-select md-form">
                                 <option value="" disabled selected>Select YouTube channel</option>
                             </select>
+                            <br>
                             <input type="text" placeholder="Search for a topic" id="search-term" />
                             <button id="search-button" type="button" class="btn btn-custom text-white"
                                 onclick="getVideo()">Search</button>
@@ -127,10 +127,11 @@
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Data Search</h1>
+                        <h1>Find Schools in Your Area</h1>
                         <select id="state-select" class="mdb-select md-form">
                             <option value="" disabled selected>Select your state</option>
                         </select>
+                        <br>
                         <input id="searchBtn-zip" type="text" placeholder="Enter ZIP code" />
                         <button id="searchBtn-state" class="btn btn-custom text-white" type="button"
                             onclick="getData()">Search</button>
@@ -146,6 +147,9 @@
     <script src="./script.js"></script>
     <script src="./logic.js"></script>
 </body>
+<footer id="footer">
+    <p>Page by HEHORT</p>
+  </footer>
 
 </html>
 
