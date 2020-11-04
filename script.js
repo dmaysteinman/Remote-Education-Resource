@@ -3,6 +3,12 @@
 // making the modal appear with the results
 // shows the content when activated 
 //youtube code
+let channelIds = {khanAcademy:"UCjHz5SVHeMT0AViCYZvsGDA", sesameStreet:
+"UCoookXUzPciGrEZEXmh4Jjg", smithsonianChannel: "UCWqPRUsJlZaDp-PVbqEch9g", novaPbsOfficial:
+"UCjHz5SVHeMT0AViCYZvsGDA" , crashCourse: "UCX6b17PVsYBQ0ip5gyeme-Q", itsOkToBeSmart: "UCH4BNI0-FOK2dMXoFtViWHw" }
+
+//const channelIdSelect = $("#channelIds-select option:selected").val();
+
 function getVideo() {
     var test = $("#search-term").val()
     console.log(test)
@@ -14,7 +20,7 @@ function getVideo() {
             key: 'AIzaSyCBVJVvBCExc4LG0QasZwIOwB8Tjh0sCYk',
             q: test, //need to link to search box
             part: 'snippet',
-            channelId: 'UC4a-Gbdw7vOaccHmFo40b9g',
+            channelId: channelIds.channelIdsSelect,
             maxResults: 1,
             type: 'video',
             videoEmbeddable: true,
