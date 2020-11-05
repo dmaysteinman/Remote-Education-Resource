@@ -2,7 +2,7 @@
 
 ### _A single-page website for parents facing the challenges of remote education_
 
-![Demo](https://www.placecage.com/600/300)  
+![Demo](assets/demo.png)  
 Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 ---
@@ -39,6 +39,8 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 - Integrate calendar feature for user to access assignments/due dates
 
 - Option for user to narrow results by school level/grades offered
+
+- Update YouTube search to display multiple video results or a full playlist
 
 ---
 
