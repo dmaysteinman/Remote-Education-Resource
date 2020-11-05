@@ -8,11 +8,17 @@ const channelIds = {
 const channelIdsArray = Object.keys(channelIds);
 const vidResultsDiv = $("#video-results");
 const channelSelectElement = $("#channelSelect");
+const topicHistoryDatalist = $("#topic-history");
+let topicHistoryArray;
 
 $(document).ready(() => {
+    // Populate YouTube channel dropdown list
     for (let i = 0; i < channelIdsArray.length; i++) {
         channelSelectElement.append(`<option value="${channelIds[channelIdsArray[i]][0]}">${channelIds[channelIdsArray[i]][1]}</option>`);
     }
+    // Get topic history from local storage
+    topicHistoryArray = JSON.parse(localStorage.getItem("topicHistory")) || [];
+    updateHistory();
 })
 
 function getVideo() {
@@ -34,6 +40,23 @@ function getVideo() {
             embedVideo(data)
         }
     });
+    if (topicHistoryArray.includes(searchTerm)) {
+        let rptIndex = topicHistoryArray.indexOf(searchTerm);
+        topicHistoryArray.splice(rptIndex, 1);
+    };
+    topicHistoryArray.unshift(searchTerm);
+    updateHistory();
+}
+
+function updateHistory() {
+    localStorage.setItem("topicHistory", JSON.stringify(topicHistoryArray));
+
+    topicHistoryDatalist.html('')
+    for (let i = 0; i < topicHistoryArray.length; i++) {
+        let newOption = `<option value="${topicHistoryArray[i]}"/>`;
+        topicHistoryDatalist.append(newOption);
+    }
+    $("#search-term").val('')
 }
 
 function embedVideo(data) {
