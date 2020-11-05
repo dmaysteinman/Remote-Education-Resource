@@ -1,12 +1,13 @@
-#navbar, .btn-custom {
-    background-color: rgb(16, 97, 115);
+#navbar,
+.btn-custom {
+  background-color: rgb(16, 97, 115);
 }
 
-#channel-select, #search-term {
-    
+#channel-select,
+#search-term {
 }
 
 #footer {
-    padding-top: 50px;
-    text-align: center;
+  padding-top: 50px;
+  text-align: center;
 }
