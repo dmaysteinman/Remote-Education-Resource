@@ -104,8 +104,8 @@
                                     <option value="" disabled selected>Select YouTube channel</option>
                                 </select>
                                 <br>
-                                <input type="text" list="topic-history" placeholder="Search for a topic"
-                                    id="search-term" /><datalist id="topic-history"></datalist>
+                                <input type="text" placeholder="Search for a topic" id="search-term"
+                                    list="topic-history" /><datalist id="topic-history"></datalist>
                                 <button id="search-button" type="button" class="btn btn-custom text-white"
                                     onclick="getVideo()">Search</button>
                             </div>
@@ -124,9 +124,10 @@
                                     <option value="" disabled selected>Select your state</option>
                                 </select>
                                 <br>
-                                <input id="searchBtn-zip" type="text" placeholder="Enter ZIP code" />
-                                <button id="searchBtn-state" class="btn btn-custom text-white" type="button"
-                                    onclick="getData()">Search</button>
+                                <input id="search-zip" type="text" placeholder="Enter ZIP code"
+                                    list="zip-history" /><datalist id="zip-history"></datalist>
+                                <button id="search-button-state" class="btn btn-custom text-white"
+                                    type="button">Search</button>
                             </div>
                         </form>
                         <div id="data-results"></div>
