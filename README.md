@@ -1,8 +1,8 @@
 # Remote Education Resource
 
-### _A single-page website for parents facing the challenges of remote education_
+### _A multi-page website for parents facing the challenges of remote education_
 
-![Demo](assets/demo.png)  
+![Demo](Images/demo.png)  
 Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 ---
@@ -11,7 +11,11 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 - Search for educational resources using Education Data Portal and YouTube Data APIs.
 
-- User selects criteria such as student age/grade, subject matter, etc. to get results for their specific needs.
+- User selects criteria such as YouTube channels: Khan Academy, Sesame Street, Smithsonian, NOVA PBS, Crash Course, and It's OK to be Smart. 
+
+- User can also search by state and zip code for potential schools in their area.
+
+- An additional resources page for other educational websites to assist with online learning such as Understood.org etc. 
 
 ---
 
