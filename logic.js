@@ -18,7 +18,7 @@ $(document).ready(() => {
 
         const stateSelect = $("#state-select option:selected").text();
         const zipInput = $("#search-zip").val();
-
+       
         const queryURL =
             `https://educationdata.urban.org/api/v1/schools/ccd/directory/2018/?state_location=${stateSelect}`
 
@@ -28,6 +28,12 @@ $(document).ready(() => {
         }).then(function (response) {
             // Clear resultsDiv
             resultsDiv.html('')
+            // ERROR message
+            if (isNaN(zipInput) || zipInput.length > 5) {
+                resultsDiv.text("ERROR: Please enter a 5 digit zip code")
+                return
+            }
+            
             let results = response.results;
             for (let i = 0; i < results.length; i++) {
                 const zipLocation = results[i].zip_location;
@@ -41,7 +47,7 @@ $(document).ready(() => {
                     resultsDiv.append(`<div class='card m-3 bg-light'><div class='card-body'><b>School Name:</b> ${schoolName} <br> <b>Phone:</b> ${phoneNumber} <br> <b>Enrollment:</b> ${enrollment} students</div></div>`)
                 }
             }
-        });
+        
 
         if (zipHistoryArray.includes(zipInput)) {
             let rptIndex = zipHistoryArray.indexOf(zipInput);
@@ -49,6 +55,7 @@ $(document).ready(() => {
         };
         zipHistoryArray.unshift(zipInput);
         updateHistory();
+    });
     })
 
     function updateHistory() {

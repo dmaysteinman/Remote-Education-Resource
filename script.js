@@ -38,7 +38,7 @@ function getVideo() {
         },
         success: function (data) {
             embedVideo(data)
-        }
+        },
     });
     if (topicHistoryArray.includes(searchTerm)) {
         let rptIndex = topicHistoryArray.indexOf(searchTerm);
@@ -61,10 +61,14 @@ function updateHistory() {
 
 function embedVideo(data) {
     vidResultsDiv.html('')
+    if (data.items.length) {
+        const newIframe = $('<iframe>').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
+        const newTitle = $('<h3>').text(data.items[0].snippet.title)
+        const newDescription = $('<p>').text(data.items[0].snippet.description)
 
-    const newIframe = $('<iframe>').attr('src', 'https://www.youtube.com/embed/' + data.items[0].id.videoId)
-    const newTitle = $('<h3>').text(data.items[0].snippet.title)
-    const newDescription = $('<p>').text(data.items[0].snippet.description)
-
-    vidResultsDiv.append(newIframe, newTitle, newDescription);
+        vidResultsDiv.append(newIframe, newTitle, newDescription);
+    } else {
+        vidResultsDiv.text("ERROR: No results found")
+    }
+    
 }
