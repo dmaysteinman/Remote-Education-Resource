@@ -2,7 +2,7 @@
 
 ### _A multi-page website for parents facing the challenges of remote education_
 
-![Demo](assets/demo.png)  
+![Demo](Images/demo.png)  
 Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 ---
