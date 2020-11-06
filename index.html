@@ -7,8 +7,6 @@
     <!-- Compiled and minified CSS -->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Helping Communities Transition to Online Learning</title>
-    <!-- MDB icon -->
-    <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <!-- Google Fonts -->
@@ -18,7 +16,7 @@
         rel="stylesheet" />
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 
@@ -75,66 +73,63 @@
             <img class="card-img-top"
                 src="https://www.vedamo.com/wp-content/uploads/2018/07/Setting-up-online-school.png"
                 alt="Card image cap" />
-            <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-            </a>
         </div>
 
         <!-- Card content -->
-        <div class="card-body card-body-cascade text-center">
+        <div class="card-body card-body-cascade p-5 text-center">
             <!-- Title -->
-            <h4 class="card-title">
-                <strong>Helping Parents & Students Thrive in an Online Environment</strong>
-            </h4>
-            <!-- Subtitle -->
-            <h6 class="font-weight-bold indigo-text py-2">Our Purpose</h6>
+            <h1 class="card-title">Helping Parents & Students Thrive in an Online Environment</h1>
             <!-- Text -->
             <p class="card-text">
-                Struggling to adjust to online schooling? You're not alone. 
+                Struggling to adjust to online schooling? You're not alone.
                 <br>
-                We've hand picked a few YouTube channels that focus on education. Just type in the subject and pick a channel to find relevant videos.
+                We've hand picked a few YouTube channels that focus on education. Just pick a channel and type in a
+                topic to find relevant videos.
                 <br>
-                Looking to contact schools in your area? Just type in your state initials and zip code for the most up-to-date list. 
+                Looking to contact schools in your area? Just select your state, then type in a zip code for the most
+                up-to-date list of nearby schools.
             </p>
         </div>
     </div>
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6 my-3">
                 <div class="card">
                     <div class="card-body">
-
-                        <h1>Resource Search</h1>
-
+                        <h2>Search for Video Resources</h2>
                         <form id="youtube-form">
-                            <select id="channelSelect" class="mdb-select md-form">
-                                <option value="" disabled selected>Select YouTube channel</option>
-                            </select>
-                            <br>
-                            <input type="text" placeholder="Search for a topic" id="search-term" />
-                            <button id="search-button" type="button" class="btn btn-custom text-white"
-                                onclick="getVideo()">Search</button>
+                            <div class="form-group">
+                                <select id="channelSelect" class="mdb-select md-form">
+                                    <option value="" disabled selected>Select YouTube channel</option>
+                                </select>
+                                <br>
+                                <input type="text" placeholder="Search for a topic" id="search-term"
+                                    list="topic-history" /><datalist id="topic-history"></datalist>
+                                <button id="search-button" type="button" class="btn btn-custom text-white"
+                                    onclick="getVideo()">Search</button>
+                            </div>
                         </form>
-                        <div>
-                            <iframe src=""></iframe>
-                            <h3></h3>
-                            <p class="description"></p>
-                        </div>
+                        <div id="video-results"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6 my-3">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Find Schools in Your Area</h1>
-                        <select id="state-select" class="mdb-select md-form">
-                            <option value="" disabled selected>Select your state</option>
-                        </select>
-                        <br>
-                        <input id="searchBtn-zip" type="text" placeholder="Enter ZIP code" />
-                        <button id="searchBtn-state" class="btn btn-custom text-white" type="button"
-                            onclick="getData()">Search</button>
+                        <h2>Find Schools in Your Area</h2>
+                        <form id="youtube-form">
+                            <div class="form-group">
+                                <select id="state-select" class="mdb-select md-form">
+                                    <option value="" disabled selected>Select your state</option>
+                                </select>
+                                <br>
+                                <input id="search-zip" type="text" placeholder="Enter ZIP code"
+                                    list="zip-history" /><datalist id="zip-history"></datalist>
+                                <button id="search-button-state" class="btn btn-custom text-white"
+                                    type="button">Search</button>
+                            </div>
+                        </form>
                         <div id="data-results"></div>
                     </div>
 
@@ -143,31 +138,13 @@
         </div>
     </div>
 
+    <footer id="footer">
+        <p>Page by HEHORT</p>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
     <script src="./logic.js"></script>
 </body>
-<footer id="footer">
-    <p>Page by HEHORT</p>
-  </footer>
 
 </html>
-
-<!-- Header  -->
-<!-- Title -->
-
-<!--<title> how this works card</title> -->
-<!-- <p>Description</p> -->
-<!-- search card -->
-<!-- Form -->
-<!-- Student information input-->
-<!-- age -->
-<!-- grade -->
-<!-- subject -->
-<!-- focus -->
-<!--</form>  -->
-
-<!-- Modal Content -->
-<!--  -->
-<!--  -->
-<!--  -->
