@@ -3,7 +3,7 @@
 ### _A multi-page website for parents facing the challenges of remote education_
 
 ![Demo](Images/demo.png)  
-Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
+Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/Remote-Education-Resource/)
 
 ---
 
@@ -50,11 +50,11 @@ Currently deployed at [GitHub Pages](https://dmaysteinman.github.io/project_1/)
 
 <div align="center">
 
-<img src='https://img.shields.io/github/repo-size/dmaysteinman/project_1'>  
-<img src='https://img.shields.io/github/last-commit/dmaysteinman/project_1'>
-<img src='https://img.shields.io/github/languages/top/dmaysteinman/project_1'>
+<img src='https://img.shields.io/github/repo-size/dmaysteinman/Remote-Education-Resource'>  
+<img src='https://img.shields.io/github/last-commit/dmaysteinman/Remote-Education-Resource'>
+<img src='https://img.shields.io/github/languages/top/dmaysteinman/Remote-Education-Resource'>
 
-This project is [MIT](https://github.com/dmaysteinman/project_1/blob/main/LICENSE) licensed  
+This project is [MIT](https://github.com/dmaysteinman/Remote-Education-Resource/blob/main/LICENSE) licensed  
 © 2020 _StopBooleanMe_
 
 </div>
